@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Fancy Pricing Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="pricing-table">
+        <div class="pricing-header">
+            <h1>Choose Your Plan</h1>
+            <p>Find the perfect plan that fits your needs. No hidden fees, cancel anytime.</p>
+        </div>
+
+        <div class="pricing-cards">
+            <!-- Basic Plan -->
+            <div class="pricing-card" onclick="selectPlan(this)">
+                <h2>Basic</h2>
+                <p class="price">R99,99<span>/month</span></p>
+                <ul>
+                    <li>5 Projects</li>
+                    <li>10GB Storage</li>
+                    <li>Email Support</li>
+                </ul>
+                <button>Choose Plan</button>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="pricing-card featured" onclick="selectPlan(this)">
+                <h2>Standard</h2>
+                <p class="price">R1500,00<span>/month</span></p>
+                <ul>
+                    <li>15 Projects</li>
+                    <li>50GB Storage</li>
+                    <li>Priority Support</li>
+                </ul>
+                <button>Choose Plan</button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card" onclick="selectPlan(this)">
+                <h2>Premium</h2>
+                <p class="price">R3500,00<span>/month</span></p>
+                <ul>
+                    <li>Unlimited Projects</li>
+                    <li>200GB Storage</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <button>Choose Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
